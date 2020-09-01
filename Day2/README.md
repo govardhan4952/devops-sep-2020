@@ -1,4 +1,4 @@
-Programming Language
+# Programming Language
 	What and How
 
 	What?
@@ -172,3 +172,12 @@ Configuration Management Tools
 			- Open source variant of Ansible Tower
 
 	- Salt Stack
+
+
+Ansible Playbook Structure
+	- Ansible Playbook is a YAML file
+	- Each Playbook contains one ore more Play
+	- Each Play targets atleast one ansible node
+	- Each Play contains one or more Tasks
+	- Each Task invoke at the most one Ansible Module(Python script)
+
