@@ -9,13 +9,17 @@
       when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
       apt:  name=nginx state=latest update_cache=yes
 
+    - name: Fix the metalink issue in CentOS Ansible Node
+      when: ( ansible_distribution == "CentOS" and ansible_os_family == "RedHat" )
+      copy: src=epel.repo dest=/etc/yum.repos.d/epel.repo
+
     - name: Install Extra Packages for Enterprise Linux (EPEL) in CentOS Ansible Node
       when: ( ansible_distribution == "CentOS" and ansible_os_family == "RedHat" )
-      yum:  name=epel-release state=latest disable_gpg_check=yes
+      yum:  name=epel-release state=latest
 
     - name: Install nginx web server into CentOS Ansible Node
       when: ( ansible_distribution == "CentOS" and ansible_os_family == "RedHat" )
-      yum:  name=nginx state=latest disable_gpg_check=yes
+      yum:  name=nginx state=latest
       
     - name: Configure nginx web root folder in Ubuntu Ansible Node
       copy: src=default dest=/etc/nginx/sites-available/default backup=yes
