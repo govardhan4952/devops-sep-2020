@@ -4,4 +4,4 @@
     - credentials.yml
   tasks:
     - name: Print vault protected data
-      debug: msg="{{username}} --> {{password}}"
+      debug: msg="Username = {{username}}; Password = {{password}}"
