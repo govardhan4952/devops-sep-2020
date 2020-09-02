@@ -1,5 +1,6 @@
 - name: This playbook will install, configure and deploy custom html page into nginx web server.
   hosts: all
+  gather_facts: yes
   vars:
     - greeting_msg: DevOps!
     - provisioner_tool: Docker
