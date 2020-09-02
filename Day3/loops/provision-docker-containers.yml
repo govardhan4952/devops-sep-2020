@@ -12,6 +12,7 @@
 
     - name: Remove all existing containers
       shell: docker rm -f $(docker ps -aq)
+      ignore_errors: yes
 
     - name: Create ubuntu containers
       docker_container:
@@ -22,7 +23,7 @@
         ports:
            - "2{{item}}:22"
            - "8{{item}}:80"
-      with_sequence: start=1   end=15 format="%03d"
+      with_sequence: start=1   end=2 format="%03d"
 
     - name: Create centos containers
       docker_container:
@@ -33,7 +34,7 @@
         ports:
            - "3{{item}}:22"
            - "9{{item}}:80"
-      with_sequence: start=1   end=15  format="%03d"
+      with_sequence: start=1   end=2  format="%03d"
 
     - name: List all provisioned containers
       shell: docker ps

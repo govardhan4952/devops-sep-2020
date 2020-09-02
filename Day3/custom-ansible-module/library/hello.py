@@ -13,7 +13,6 @@ def main():
     )
 
     message = module.params['msg']
-
     output = sayHello( message )
 
     # Success with no change
