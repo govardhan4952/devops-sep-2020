@@ -1,0 +1,71 @@
+2020-09-02 01:41:15,505 p=47225 u=root n=ansible | PLAY [Demonstrates use of list and navigating/accessing list elements] *********************************************
+2020-09-02 01:41:15,524 p=47225 u=root n=ansible | TASK [Gathering Facts] *********************************************************************************************
+2020-09-02 01:41:17,561 p=47225 u=root n=ansible | ok: [ubuntu2]
+2020-09-02 01:41:17,590 p=47225 u=root n=ansible | ok: [ubuntu1]
+2020-09-02 01:41:17,609 p=47225 u=root n=ansible | TASK [Install software utilities] **********************************************************************************
+2020-09-02 01:41:17,733 p=47371 u=root n=ansible | [DEPRECATION WARNING]: Invoking "apt" only once while using a loop via squash_actions is deprecated. Instead of 
+using a loop to supply multiple items and specifying `name: "{{item}}"`, please use `name: '{{software_tools}}'` 
+and remove the loop. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-09-02 01:41:17,745 p=47372 u=root n=ansible | [DEPRECATION WARNING]: Invoking "apt" only once while using a loop via squash_actions is deprecated. Instead of 
+using a loop to supply multiple items and specifying `name: "{{item}}"`, please use `name: '{{software_tools}}'` 
+and remove the loop. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-09-02 01:41:41,974 p=47225 u=root n=ansible | changed: [ubuntu1] => (item=[u'vim', u'tree', u'net-tools', u'iputils-ping'])
+2020-09-02 01:41:41,978 p=47225 u=root n=ansible | changed: [ubuntu2] => (item=[u'vim', u'tree', u'net-tools', u'iputils-ping'])
+2020-09-02 01:41:41,981 p=47225 u=root n=ansible | [WARNING]: Updating cache and auto-installing missing dependency: python3-apt
+
+2020-09-02 01:41:41,988 p=47225 u=root n=ansible | PLAY RECAP *********************************************************************************************************
+2020-09-02 01:41:41,989 p=47225 u=root n=ansible | ubuntu1                    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-02 01:41:41,989 p=47225 u=root n=ansible | ubuntu2                    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-02 01:43:49,295 p=48844 u=root n=ansible | PLAY [Demonstrates use of list and navigating/accessing list elements] *********
+2020-09-02 01:43:49,305 p=48844 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2020-09-02 01:43:50,647 p=48844 u=root n=ansible | ok: [ubuntu2]
+2020-09-02 01:43:50,652 p=48844 u=root n=ansible | ok: [ubuntu1]
+2020-09-02 01:43:50,663 p=48844 u=root n=ansible | TASK [Install software utilities] **********************************************
+2020-09-02 01:43:50,728 p=48998 u=root n=ansible | [DEPRECATION WARNING]: Invoking "apt" only once while using a loop via 
+squash_actions is deprecated. Instead of using a loop to supply multiple items 
+and specifying `name: "{{item}}"`, please use `name: '{{software_tools}}'` and 
+remove the loop. This feature will be removed in version 2.11. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-09-02 01:43:50,747 p=48999 u=root n=ansible | [DEPRECATION WARNING]: Invoking "apt" only once while using a loop via 
+squash_actions is deprecated. Instead of using a loop to supply multiple items 
+and specifying `name: "{{item}}"`, please use `name: '{{software_tools}}'` and 
+remove the loop. This feature will be removed in version 2.11. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-09-02 01:43:57,055 p=48844 u=root n=ansible | ok: [ubuntu1] => (item=[u'vim', u'tree', u'net-tools', u'iputils-ping'])
+2020-09-02 01:43:57,132 p=48844 u=root n=ansible | ok: [ubuntu2] => (item=[u'vim', u'tree', u'net-tools', u'iputils-ping'])
+2020-09-02 01:43:57,137 p=48844 u=root n=ansible | PLAY RECAP *********************************************************************
+2020-09-02 01:43:57,137 p=48844 u=root n=ansible | ubuntu1                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-02 01:43:57,137 p=48844 u=root n=ansible | ubuntu2                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-02 01:44:27,372 p=49466 u=root n=ansible | PLAY [Demonstrates use of list and navigating/accessing list elements] *********
+2020-09-02 01:44:27,382 p=49466 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2020-09-02 01:44:28,526 p=49466 u=root n=ansible | ok: [ubuntu1]
+2020-09-02 01:44:29,547 p=49466 u=root n=ansible | ok: [ubuntu2]
+2020-09-02 01:44:29,558 p=49466 u=root n=ansible | TASK [Install software utilities] **********************************************
+2020-09-02 01:44:35,313 p=49466 u=root n=ansible | ok: [ubuntu2]
+2020-09-02 01:44:35,336 p=49466 u=root n=ansible | ok: [ubuntu1]
+2020-09-02 01:44:35,340 p=49466 u=root n=ansible | PLAY RECAP *********************************************************************
+2020-09-02 01:44:35,341 p=49466 u=root n=ansible | ubuntu1                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-02 01:44:35,341 p=49466 u=root n=ansible | ubuntu2                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-02 01:49:23,593 p=50194 u=root n=ansible | PLAY [Demonstrates practical use of dictionary in playbook] ********************
+2020-09-02 01:49:23,602 p=50194 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2020-09-02 01:49:25,932 p=50194 u=root n=ansible | ok: [localhost]
+2020-09-02 01:49:26,004 p=50194 u=root n=ansible | TASK [debug] *******************************************************************
+2020-09-02 01:49:26,098 p=50194 u=root n=ansible | failed: [localhost] (item={u'key': u'M2_HOME', u'value': u'/usr/share/maven'}) => {"msg": "Invalid options for debug: message"}
+2020-09-02 01:49:26,107 p=50194 u=root n=ansible | failed: [localhost] (item={u'key': u'JAVA_HOME', u'value': u'/usr/lib/java/jdk8'}) => {"msg": "Invalid options for debug: message"}
+2020-09-02 01:49:26,108 p=50194 u=root n=ansible | fatal: [localhost]: FAILED! => {"msg": "All items completed"}
+2020-09-02 01:49:26,110 p=50194 u=root n=ansible | PLAY RECAP *********************************************************************
+2020-09-02 01:49:26,111 p=50194 u=root n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-02 01:49:46,626 p=50440 u=root n=ansible | PLAY [Demonstrates practical use of dictionary in playbook] ********************
+2020-09-02 01:49:46,638 p=50440 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2020-09-02 01:49:49,670 p=50440 u=root n=ansible | ok: [localhost]
+2020-09-02 01:49:49,752 p=50440 u=root n=ansible | TASK [debug] *******************************************************************
+2020-09-02 01:49:49,868 p=50440 u=root n=ansible | ok: [localhost] => (item={u'key': u'M2_HOME', u'value': u'/usr/share/maven'}) => {
+    "msg": "M2_HOME --> /usr/share/maven"
+}
+2020-09-02 01:49:49,878 p=50440 u=root n=ansible | ok: [localhost] => (item={u'key': u'JAVA_HOME', u'value': u'/usr/lib/java/jdk8'}) => {
+    "msg": "JAVA_HOME --> /usr/lib/java/jdk8"
+}
+2020-09-02 01:49:49,884 p=50440 u=root n=ansible | PLAY RECAP *********************************************************************
+2020-09-02 01:49:49,885 p=50440 u=root n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
