@@ -1,4 +1,4 @@
-### Ansible Vault
+## Ansible Vault
 
 Helps in protected sensitive data like 
 * login credentials
@@ -30,25 +30,20 @@ ansible-vault view credentials.yml
 ## You may try editing the vault protected file.
 ansible-vault edit credentials.yml
 
-## In case you have created the credentials.yml with a normal text editor and you
-wish to encrypt, you may try this
-
+## In case you have created the credentials.yml with a normal text editor and you wish to encrypt, you may try this
 ansible-vault encrypt credentials.yml
 
 ## If you wish to edit with regualar text editor, you may decrypt the file as below
-
 ansible-vault decrypt credentials.yml
 
 ## You can access the vault protected file from playbook
 ansible-playbook vault-playbook.yml --ask-vault-pass
 
-## You can store the vault password in some hidden location
+## You can store the vault password in some hidden location as shown below
 echo "tektutor" > ./.secrets
 
 In your ansible.cfg file, you can configure under [defaults] section
+
 vault_password_file=./.secrets
 
 ansible-playbook vault-playbook.yml
-
-
-
