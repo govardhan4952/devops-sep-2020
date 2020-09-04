@@ -15,7 +15,9 @@ Open regedit and check if you are able to locate the below entries.  When .Net 4
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full
 
 ### Configuring WinRM on Windows machine 
-$url = "https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1" $file = "$env:temp\ConfigureRemotingForAnsible.ps1"
+$url = "https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1" 
+
+$file = "$env:temp\ConfigureRemotingForAnsible.ps1"
 
 (New-Object -TypeName System.Net.WebClient).DownloadFile($url, $file)
 
