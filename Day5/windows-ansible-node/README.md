@@ -1,5 +1,12 @@
 # Setting up a Windows Ansible Node
-You may create a T2 - Medium ec2 instance with Microsoft Windows Server 2019 Base AMI.
+* You may use an existing Windows Server (On Premise) or
+* You may create a T2 - Medium ec2 instance with Microsoft Windows Server 2019 Base AMI.
+
+### WinRM ports must be opened up on Windows Server
+* WinRM HTTPS Port - 5986
+* WinRM HTTP  Port - 5985
+
+In case of AWS ec2 instance, make sure the above port is opened up in Security Group.
 
 ### Windows Node Ansible Requirments
 
