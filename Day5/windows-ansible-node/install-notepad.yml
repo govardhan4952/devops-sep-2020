@@ -4,5 +4,5 @@
     - name: Install notepad++
       win_chocolatey:
          name: notepadplusplus
-         force: yes
+         #force: yes
          state: latest 
