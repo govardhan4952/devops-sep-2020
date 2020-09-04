@@ -30,17 +30,20 @@
 
 You need to add the below in the tomcat-users.xml file
 
->  <role rolename="manager-script"/>
->  <role rolename="manager-gui"/>
->  <user username="tomcat" password="tomcat" roles="manager-script,manager-gui"/>
+  <role rolename="manager-script"/>
+  <role rolename="manager-gui"/>
+  <user username="tomcat" password="tomcat" roles="manager-script,manager-gui"/>
 
 Configure tomcat to use port 8085 as Jenkins would already use the port 8080 by edit server.xml file
 and replace port 8080 with 8085 as shown below
 
->    <Connector port="8085" protocol="HTTP/1.1"
->               connectionTimeout="20000"
->               redirectPort="8443" />
+<p>
+  
+   <Connector port="8085" protocol="HTTP/1.1"
+              connectionTimeout="20000"
+              redirectPort="8443" />
 
+</p>
 
 You may now start tomcat server
 
