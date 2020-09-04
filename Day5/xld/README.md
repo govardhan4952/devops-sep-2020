@@ -53,3 +53,4 @@ You may now test if you can access the tomcat web page from your browser
 
 Once the tomcat page gets loaded, click on the manage button and type 'tomcat' as the user and 'tomcat' as the
 password without single quotes. If all goes well, you should be able to access the manage page.
+
