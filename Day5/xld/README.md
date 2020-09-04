@@ -14,17 +14,17 @@ wget https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war
 
 ## You may download Tomcat 9.0 as shown below
 
-** For example, in my case I would navigate to /home/jegan/Downloads folder **
+<strong>For example, in my case I would navigate to /home/jegan/Downloads folder</strong>
 
 cd /home/jegan/Downloads
 
 wget http://apachemirror.wuchna.com/tomcat/tomcat-9/v9.0.37/bin/apache-tomcat-9.0.37.tar.gz
 
-** Extract the tar ball **
+<strong> Extract the tar ball</strong>
 
 tar xvf apache-tomcat-9.0.37.tar.gz
 
-** Navigate to tomcat configuration folder **
+<strong>Navigate to tomcat configuration folder</strong>
 
 cd apache-tomcat-9.0.37/conf
 
